@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="my.css">
+    <link rel="review" href="review.html">
+    <link rel="log in" href="login.html">
+    <link rel="price list" href="price list.html">
+    <link rel="my" href="my.html"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Service Request Form</title>
+</head>
+<body>
+    <h1>Appliance Service Request Form</h1>
+    <form>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        
+        <label for="email">E-mail Address:*</label>
+        <input type="email" id="email" name="email" placeholder="ex: myname@example.com" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder=" Phone Number" required>
+        
+        <label for="county">Country:</label>
+        <select id="county" name="county">
+            <option value="">Please Select</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Mombasa">Mombasa</option>
+        </select>
+        
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" placeholder="(i.e. Microwave)" required>
+        
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="(i.e. LG, Smeg)" required>
+        
+        <label for="description">Description:*</label>
+        <textarea id="description" name="description" rows="4" placeholder="What are the problems you are having with the appliance." required></textarea>
+        
+        <button type="submit" class="button">Submit</button>
+    </form>
+</body>
+</html>

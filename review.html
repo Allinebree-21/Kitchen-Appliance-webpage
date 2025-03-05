@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="my.css">
+    <link rel="form" href="form.html">
+    <link rel="log in" href="login.html">
+    <link rel="price list" href="price list.html">
+    <link rel="my" href="my.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Appliance Reviews</title>
+    
+</head>
+<body>
+    <h1>Kitchen Appliance Reviews</h1>
+    <div class="review-container">
+        <div class="review">
+            <h3>Blender - Oster pro 1200 blender</h3>
+            <p class="stars">★★★★★</p>
+            <p>"Amazing blender! Works perfectly for smoothies and soups." - Alice</p>
+        </div>
+        <div class="review">
+            <h3>Microwave - Lg-500</h3>
+            <p class="stars">★★★★☆</p>
+            <p>"Great microwave but wish it had more power settings." - John</p>
+        </div>
+        <div class="review">
+            <h3>Fridge -smeg-700</h3>
+            <p class="stars">★★★★★</p>
+            <p>"Spacious and energy-efficient. Totally worth it!" - Sarah</p>
+        </div>
+    </div>
+    
+    <h2>Submit Your Review</h2>
+    <form>
+        <label for="appliance">Appliance:</label>
+        <input type="text" id="appliance" name="appliance" placeholder="Enter appliance name" required>
+        
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="rating">Rating (1-5 Stars):</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+        
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" rows="4" placeholder="Write your review here..." required></textarea>
+        
+        <button type="submit" class="button">Submit Review</button>
+    </form>
+</body>
+</html>

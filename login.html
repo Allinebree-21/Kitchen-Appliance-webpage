@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="my.css">
+    <link rel="form" href="form.html">
+    <link rel="review" href="review.html">
+    <link rel="price list" href="price list.html">
+    <link rel="my" href="my.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration - Kitchen Appliances</title>
+    
+</head>
+<body>
+    <h1>Kitchen Appliances - Login & Register</h1>
+    
+    <div class="container" id="login-container">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button class="button" onclick="loginUser()">Login</button>
+        <span class="toggle-link" onclick="toggleForms()">Don't have an account? Register</span>
+    </div>
+    
+    <div class="container" id="register-container" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="register-name" placeholder="Full Name" required>
+        <input type="email" id="register-email" placeholder="Email" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button class="button" onclick="registerUser()">Register</button>
+        <span class="toggle-link" onclick="toggleForms()">Already have an account? Login</span>
+    </div>
+    
+    <script>
+        function toggleForms() {
+            document.getElementById("login-container").style.display = 
+                document.getElementById("login-container").style.display === "none" ? "block" : "none";
+            document.getElementById("register-container").style.display = 
+                document.getElementById("register-container").style.display === "none" ? "block" : "none";
+        }
+
+        function loginUser() {
+            let email = document.getElementById("login-email").value;
+            let password = document.getElementById("login-password").value;
+            if (email && password) {
+                alert("Login successful for " + email);
+            } else {
+                alert("Please enter email and password");
+            }
+        }
+
+        function registerUser() {
+            let name = document.getElementById("register-name").value;
+            let email = document.getElementById("register-email").value;
+            let password = document.getElementById("register-password").value;
+            if (name && email && password) {
+                alert("Registration successful for " + name);
+                toggleForms();
+            } else {
+                alert("Please fill all fields");
+            }
+        }
+    </script>
+</body>
+</html>
